@@ -1,0 +1,4 @@
+abstract class OnBoardingScreenStates{}
+class OnBoardingScreenInitialState extends OnBoardingScreenStates{}
+class ChangePersonTypeInitialState extends OnBoardingScreenStates{}
+class ChangePersonTypeState extends OnBoardingScreenStates{}
