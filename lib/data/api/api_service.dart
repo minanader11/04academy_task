@@ -8,7 +8,9 @@ import 'package:madrasa_task/data/api/api_constants.dart';
 import 'package:madrasa_task/data/models/request/FormRequest.dart';
 import 'package:madrasa_task/data/models/response/FormResponseDto.dart';
 import 'package:madrasa_task/data/models/response/MaterialResponseDto.dart';
+import 'package:madrasa_task/data/models/response/SubscriptionResponseDto.dart';
 import 'package:madrasa_task/domain/entities/FromResponse.dart';
+import 'package:madrasa_task/domain/entities/SubscriptionResponse.dart';
 import 'package:madrasa_task/domain/entities/failure.dart';
 class ApiService{
   Future<Either<Failures,FormResponseDto>>postForm(FormRequest formRequest) async{
@@ -52,6 +54,33 @@ class ApiService{
       if(response.statusCode>=200 && response.statusCode <300 ){
 
         return Right(subjects);
+      }else{
+        return Left(ServerFailure(errMsg:"Error Fetching Materials" ));
+      }
+    } else{
+      return Left(NetworkFailure(errMsg: 'Network Error'));
+    }
+  }
+  Future<Either<Failures,List<SubscriptionResponseDto>>>getSubscription() async{
+    var connectivityResult = await Connectivity().checkConnectivity(); // User defined class
+    if (connectivityResult.contains(ConnectivityResult.mobile) ||
+        connectivityResult.contains(ConnectivityResult.wifi)){
+      Uri url = Uri.https(ApiConstants.baseUrl, ApiConstants.subscriptionsApi);
+      //  var formRequestDto= formRequest;
+      var response =await http.get(url);
+
+      List< SubscriptionResponseDto> subscriptions=[];
+
+      var jsonResponse=jsonDecode(response.body);
+      print(jsonResponse);
+      for(int i =0 ;i<jsonResponse.length;i++){
+        subscriptions.add(SubscriptionResponseDto.fromJson(jsonResponse[i]));
+       // print(subjects[i]);
+      }
+      //  var materialsResponse= MaterialResponseDto.fromJson(jsonDecode(response.body));
+      if(response.statusCode>=200 && response.statusCode <300 ){
+
+        return Right(subscriptions);
       }else{
         return Left(ServerFailure(errMsg:"Error Fetching Materials" ));
       }

@@ -66,34 +66,34 @@ class Thirdstepscreen extends StatelessWidget {
           SizedBox(
             height: 10.h,
           ),
-          //CustomGridViewForSubjects(texts: stepPageCubit.subjects.map((e) => e.englishData!,).toList()),
+          CustomGridViewForSubjects(texts: stepPageCubit.subjects.map((e) => e.englishData!,).toList()),
           //CustomTextContainer(text: 'رياض الاطفال')
-          Container(
-            width: w,
-            height: 500.h,
-            child: IntrinsicHeight(
-              child: GridView.builder(
-                padding: EdgeInsets.zero,
-                itemCount: stepPageCubit.subjects.length,
-                scrollDirection: Axis.vertical,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisSpacing: 5,
-                    mainAxisSpacing: 5,
-                    childAspectRatio: 100.w / 50.h,
-                    crossAxisCount: 2),
-                itemBuilder: (context, index) {
-                  return CustomSubjectContainer(
-                    text: stepPageCubit.subjects[index].englishData!,
-                    onTap: () {if(stepPageCubit.selectedSubjectIndex==index){
-                      stepPageCubit.changeSubjectIndex(-1);
-                    } else{
-                      stepPageCubit.changeSubjectIndex(index);}
-                    },isSelected: stepPageCubit.selectedSubjectIndex==index,
-                  );
-                },
-              ),
-            ),
-          ),
+          // Container(
+          //   width: w,
+          //   height: 500.h,
+          //   child: IntrinsicHeight(
+          //     child: GridView.builder(
+          //       padding: EdgeInsets.zero,
+          //       itemCount: stepPageCubit.subjects.length,
+          //       scrollDirection: Axis.vertical,
+          //       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          //           crossAxisSpacing: 5,
+          //           mainAxisSpacing: 5,
+          //           childAspectRatio: 100.w / 50.h,
+          //           crossAxisCount: 2),
+          //       itemBuilder: (context, index) {
+          //         return CustomSubjectContainer(
+          //           text: stepPageCubit.subjects[index].englishData!,
+          //           onTap: () {if(stepPageCubit.selectedSubjectIndex==index){
+          //             stepPageCubit.changeSubjectIndex(-1);
+          //           } else{
+          //             stepPageCubit.changeSubjectIndex(index);}
+          //           },isSelected: stepPageCubit.selectedSubjectIndex==index,
+          //         );
+          //       },
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

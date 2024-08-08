@@ -4,6 +4,7 @@ import 'package:madrasa_task/data/models/request/FormRequest.dart';
 import 'package:madrasa_task/domain/data_source/authentication/authentication_data_source.dart';
 import 'package:madrasa_task/domain/entities/FromResponse.dart';
 import 'package:madrasa_task/domain/entities/MaterialResponse.dart';
+import 'package:madrasa_task/domain/entities/SubscriptionResponse.dart';
 import 'package:madrasa_task/domain/entities/failure.dart';
 
 class AuthenticationDataSourceImpl implements AuthenticationDataSource{
@@ -23,6 +24,16 @@ class AuthenticationDataSourceImpl implements AuthenticationDataSource{
   @override
   Future<Either<Failures, List<MaterialResponseEntity>>> getSubjects() async{
     var response= await apiService.getSubjects();
+    return response.fold((l) {
+      return Left(l);
+    }, (r) {
+      return Right(r);
+    },);
+  }
+
+  @override
+  Future<Either<Failures, List<SubscriptionResponseEntity>>> getSubscription() async {
+    var response= await apiService.getSubscription();
     return response.fold((l) {
       return Left(l);
     }, (r) {

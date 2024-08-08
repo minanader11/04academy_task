@@ -4,6 +4,7 @@ import 'package:madrasa_task/data/repo_impl/authentication/authentication_repo_i
 import 'package:madrasa_task/domain/data_source/authentication/authentication_data_source.dart';
 import 'package:madrasa_task/domain/repo/authentication/Authentication_repo.dart';
 import 'package:madrasa_task/domain/use_cases/getSubjectsUseCase.dart';
+import 'package:madrasa_task/domain/use_cases/getSubscriptionsUseCase.dart';
 
 GetSubjectsUseCase injectGeSubjectsUseCase(){
   return GetSubjectsUseCase(authenticationRepo: injectAuthenticationRepo());
@@ -16,4 +17,7 @@ AuthenticationDataSource injectAuthenticationDataSource(){
 }
 ApiService injectApiService(){
   return ApiService();
+}
+GetSubscriptionsUseCase injectGetSubscriptionsUseCase(){
+  return GetSubscriptionsUseCase(authenticationRepo: injectAuthenticationRepo());
 }

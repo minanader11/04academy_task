@@ -9,3 +9,9 @@ class GetSubjectsFailureState extends StepPageScreenStates{
   GetSubjectsFailureState({required this.errMsg});
 }
 class ChangeIndexOfSelectedSubject extends StepPageScreenStates{}
+class GetSubscriptionLoadingState extends StepPageScreenStates{}
+class GetSubscriptionSuccessState extends StepPageScreenStates{}
+class GetSubscriptionFailureState extends StepPageScreenStates{
+  String errMsg;
+  GetSubscriptionFailureState({required this.errMsg});
+}

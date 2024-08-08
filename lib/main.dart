@@ -20,8 +20,16 @@ void main() async {
     BlocProvider<OnBoardingScreenCubit>(
       create: (context) => OnBoardingScreenCubit(),
     ),
-    BlocProvider<StepPageScreenCubit>(create: (context) => StepPageScreenCubit(getSubjectsUseCase: injectGeSubjectsUseCase())..getSubjects(),),
-    BlocProvider<RegisterCubit>(create: (context) => RegisterCubit(),)
+    BlocProvider<StepPageScreenCubit>(
+      create: (context) => StepPageScreenCubit(
+          getSubjectsUseCase: injectGeSubjectsUseCase(),
+          getSubscriptionsUseCase: injectGetSubscriptionsUseCase())
+        ..getSubjects()
+        ..getSubscriptions(),
+    ),
+    BlocProvider<RegisterCubit>(
+      create: (context) => RegisterCubit(),
+    )
   ], child: MyApp()));
 }
 

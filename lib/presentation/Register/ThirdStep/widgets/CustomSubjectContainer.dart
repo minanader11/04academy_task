@@ -22,7 +22,7 @@ class CustomSubjectContainer extends StatelessWidget {
     return BlocBuilder<StepPageScreenCubit, StepPageScreenStates>(
       builder: (context, state) => InkWell(
         onTap: onTap,
-        child: Card(
+        child: Card(elevation: 10,
           margin: EdgeInsets.zero,
           child: Container(
             decoration: BoxDecoration(

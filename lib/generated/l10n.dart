@@ -1609,6 +1609,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Create the package that suits your needs and we will guarantee you the maximum benefit from every session`
+  String get createYourPackage {
+    return Intl.message(
+      'Create the package that suits your needs and we will guarantee you the maximum benefit from every session',
+      name: 'createYourPackage',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

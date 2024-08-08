@@ -3,6 +3,7 @@ import 'package:madrasa_task/data/models/request/FormRequest.dart';
 import 'package:madrasa_task/domain/data_source/authentication/authentication_data_source.dart';
 import 'package:madrasa_task/domain/entities/FromResponse.dart';
 import 'package:madrasa_task/domain/entities/MaterialResponse.dart';
+import 'package:madrasa_task/domain/entities/SubscriptionResponse.dart';
 import 'package:madrasa_task/domain/entities/failure.dart';
 import 'package:madrasa_task/domain/repo/authentication/Authentication_repo.dart';
 
@@ -18,6 +19,11 @@ class AuthenticationRepoImpl implements AuthenticationRepo{
   @override
   Future<Either<Failures, List<MaterialResponseEntity>>> getSubjects() {
     return authenticationDataSource.getSubjects();
+  }
+
+  @override
+  Future<Either<Failures, List<SubscriptionResponseEntity>>> getSubscription() {
+return authenticationDataSource.getSubscription();
   }
 
 }

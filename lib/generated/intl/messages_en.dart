@@ -66,6 +66,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "confirmReservation":
             MessageLookupByLibrary.simpleMessage("Confirm Reservation"),
         "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
+        "createYourPackage": MessageLookupByLibrary.simpleMessage(
+            "Create the package that suits your needs and we will guarantee you the maximum benefit from every session"),
         "creditCardSuccessfullyLinked": MessageLookupByLibrary.simpleMessage(
             "Your credit card has been successfully linked"),
         "doYouFace": MessageLookupByLibrary.simpleMessage(
