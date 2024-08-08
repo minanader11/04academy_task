@@ -192,6 +192,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "success": MessageLookupByLibrary.simpleMessage("success"),
         "suggestionsAndComplaints":
             MessageLookupByLibrary.simpleMessage("Suggestions And Complaints"),
+        "thankYou": MessageLookupByLibrary.simpleMessage(
+            "Thank you, we are waiting for you to begin an inspiring and fruitful learning journey"),
         "theAccountHasBeenSetUpSuccessfully":
             MessageLookupByLibrary.simpleMessage(
                 "The Account Has Been Set Up Successfully!"),

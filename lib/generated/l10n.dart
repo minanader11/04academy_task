@@ -1619,6 +1619,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Thank you, we are waiting for you to begin an inspiring and fruitful learning journey`
+  String get thankYou {
+    return Intl.message(
+      'Thank you, we are waiting for you to begin an inspiring and fruitful learning journey',
+      name: 'thankYou',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

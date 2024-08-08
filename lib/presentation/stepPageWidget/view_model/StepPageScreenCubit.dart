@@ -8,14 +8,16 @@ import 'package:madrasa_task/domain/use_cases/getSubscriptionsUseCase.dart';
 import 'package:madrasa_task/presentation/Register/FifthStep/FifthStepScreen.dart';
 import 'package:madrasa_task/presentation/Register/FirstStep/FirstStepScreen.dart';
 import 'package:madrasa_task/presentation/Register/FourthStep/FourthStepScreen.dart';
+import 'package:madrasa_task/presentation/Register/SixthStep/SixthStepScreen.dart';
 import 'package:madrasa_task/presentation/Register/ThirdStep/ThirdStepScreen.dart';
 import 'package:madrasa_task/presentation/Register/secondStep/SecondStepScreen.dart';
+import 'package:madrasa_task/presentation/Register/seventhStep/SeventhStepScreen.dart';
 import 'package:madrasa_task/presentation/stepPageWidget/view_model/StepPageScreenStates.dart';
 
 class StepPageScreenCubit extends Cubit<StepPageScreenStates>{
   StepPageScreenCubit({required this.getSubjectsUseCase,required this.getSubscriptionsUseCase}):super(StepPageScreenInitialState());
 
-List<Widget> tabs=[FirstStepScreen(),SecondStepScreen(),Thirdstepscreen(),FourthStepScreen(),FifthStepScreen()];
+List<Widget> tabs=[FirstStepScreen(),SecondStepScreen(),Thirdstepscreen(),FourthStepScreen(),FifthStepScreen(),SixthStepScreen(),SeventhStepScreen()];
 int tabIndex=0;
 int selectedEducationalLevel=-1;
 int selectedClassRoom=-1;

@@ -194,6 +194,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "success": MessageLookupByLibrary.simpleMessage("النجاح"),
         "suggestionsAndComplaints":
             MessageLookupByLibrary.simpleMessage("المقترحات والشكاوى"),
+        "thankYou": MessageLookupByLibrary.simpleMessage(
+            "ِشكرا علي نحن في انتظارك لنبدا رحلة تعلم ملهمة و مثمرة"),
         "theAccountHasBeenSetUpSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم إعداد الحساب بنجاح!"),
         "theCreditCardIsConnected":

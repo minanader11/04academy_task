@@ -19,15 +19,16 @@ class StepPageScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var stepPageCubit=BlocProvider.of<StepPageScreenCubit>(context);
-    return BlocBuilder<StepPageScreenCubit,StepPageScreenStates>(
+    var stepPageCubit = BlocProvider.of<StepPageScreenCubit>(context);
+    return BlocBuilder<StepPageScreenCubit, StepPageScreenStates>(
       builder: (context, state) => Scaffold(
         backgroundColor: whiteColor,
         body: SingleChildScrollView(
           child: Container(
             height: h,
             width: w,
-            padding: EdgeInsetsDirectional.only(top: 50.h, start: 10.w, end: 10.w),
+            padding:
+                EdgeInsetsDirectional.only(top: 50.h, start: 10.w, end: 10.w),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -38,15 +39,15 @@ class StepPageScreen extends StatelessWidget {
                   barRadius: Radius.circular(10.r),
                   // width: w,
                   lineHeight: 14.0,
-                  percent: (stepPageCubit.tabIndex+1)*0.14,
+                  percent: stepPageCubit.tabIndex==6?1: (stepPageCubit.tabIndex + 1) * 0.14,
                   backgroundColor: Colors.grey,
                   progressColor: greenColor,
                 ),
                 SizedBox(
                   height: 10.h,
                 ),
-                 stepPageCubit.tabs[stepPageCubit.tabIndex],
-                 //FirstStepScreen(),
+                stepPageCubit.tabs[stepPageCubit.tabIndex],
+                //FirstStepScreen(),
                 // IntrinsicHeight(
                 //   child: Row(
                 //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -81,59 +82,77 @@ class StepPageScreen extends StatelessWidget {
                 //   ),
                 // ),
                 Spacer(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Expanded(
-                      child: CustomElevatedButton(borderSide: BorderSide(color: greenColor),
-                          outlinedBorder: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5.r)),
-                          backGroundColor: Colors.white,
-                          onPressed: () {
-                        stepPageCubit.decreaseTabIndex();
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              FittedBox(
-                                  child: Icon(
-                                    Icons.keyboard_double_arrow_right,
-                                    color: greenColor,
-                                  )),
-                              CustomText(
-                                  text: 'السابق',
-                                  customTextStyle: BoldStyle(color: greenColor)),
-
-                            ],
-                          )),
-                    ),
-                    SizedBox(width: 5.w,),
-                    Expanded(
-                      child: CustomElevatedButton(
-                          outlinedBorder: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5.r)),
-                          backGroundColor: greenColor,
-                          onPressed: () {
-                            stepPageCubit.increaseTabIndex();
-                          },
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              CustomText(
-                                  text: 'التالي',
-                                  customTextStyle: BoldStyle(color: whiteColor)),
-                              FittedBox(
-                                  child: Icon(
-                                Icons.keyboard_double_arrow_left,
-                                color: whiteColor,
-                              ))
-                            ],
-                          )),
-                    ),
-
-                  ],
-                ),
-                SizedBox(height: 20.h,)
+                stepPageCubit.tabIndex == 6
+                    ? CustomElevatedButton(
+                    outlinedBorder: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5.r)),
+                        backGroundColor: greenColor,
+                        onPressed: () {},
+                        child: CustomText(
+                            text: 'توجه الي جدولك الدراسي',
+                            customTextStyle: BoldStyle(color: whiteColor)))
+                    : Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Expanded(
+                            child: CustomElevatedButton(
+                                borderSide: BorderSide(color: greenColor),
+                                outlinedBorder: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.r)),
+                                backGroundColor: Colors.white,
+                                onPressed: () {
+                                  if(stepPageCubit.tabIndex==0){
+                                    Navigator.of(context).pop();
+                                  }else{
+                                  stepPageCubit.decreaseTabIndex();
+                                  }
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    FittedBox(
+                                        child: Icon(
+                                      Icons.keyboard_double_arrow_right,
+                                      color: greenColor,
+                                    )),
+                                    CustomText(
+                                        text: 'السابق',
+                                        customTextStyle:
+                                            BoldStyle(color: greenColor)),
+                                  ],
+                                )),
+                          ),
+                          SizedBox(
+                            width: 5.w,
+                          ),
+                          Expanded(
+                            child: CustomElevatedButton(
+                                outlinedBorder: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5.r)),
+                                backGroundColor: greenColor,
+                                onPressed: () {
+                                  stepPageCubit.increaseTabIndex();
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    CustomText(
+                                        text: 'التالي',
+                                        customTextStyle:
+                                            BoldStyle(color: whiteColor)),
+                                    FittedBox(
+                                        child: Icon(
+                                      Icons.keyboard_double_arrow_left,
+                                      color: whiteColor,
+                                    ))
+                                  ],
+                                )),
+                          ),
+                        ],
+                      ),
+                SizedBox(
+                  height: 20.h,
+                )
               ],
             ),
           ),
