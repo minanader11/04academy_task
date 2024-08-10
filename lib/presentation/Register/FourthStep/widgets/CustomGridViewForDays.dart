@@ -34,8 +34,8 @@ class CustomGridViewForDays extends StatelessWidget {
     return Wrap(runSpacing: 8.h,children:[
       for(int i = 0 ;i<texts.length;i++)...[
         CustomTextContainer(text: texts[i],onTap: () {
-          stepPageCubit.changeSubjectIndex(i);
-        },isSelected: stepPageCubit.selectedSubjectIndex==i,),
+          stepPageCubit.changeDayIndex(i);
+        },isSelected: stepPageCubit.selectedDayIndex==i,),
         SizedBox(width: 8.w,),
       ],
     // CustomTextContainer(text: texts[0],onTap: () {

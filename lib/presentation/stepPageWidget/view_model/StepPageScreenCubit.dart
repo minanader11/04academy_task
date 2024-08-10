@@ -38,17 +38,31 @@ class StepPageScreenCubit extends Cubit<StepPageScreenStates> {
   int selectedLessonIndex = -1;
   int selectedLessonTimeIndex = -1;
   int selectedSubscriptionIndex = -1;
+  int selectedSingleLessonPeriodIndex=-1;
   GetSubjectsUseCase getSubjectsUseCase;
   GetSubscriptionsUseCase getSubscriptionsUseCase;
   List<MaterialResponseEntity> subjects = [];
   List<SubscriptionResponseEntity> subscriptions = [];
   ScrollController scrollController=ScrollController();
   var dateValue='';
+  String selectedGender='ذكر';
+  String selectedNationaltiy='مصري';
   void increaseTabIndex() {
     emit(StepPageScreenInitialState());
     tabIndex++;
     scrollController.jumpTo(0);
     emit(ChangeTabIndexState());
+  }
+  void changeGender(String gender){
+    emit(StepPageScreenInitialState());
+    selectedGender=gender;
+    emit(ChangeDropDownValue());
+  }
+
+  void changeNationality(String nationality){
+    emit(StepPageScreenInitialState());
+    selectedNationaltiy=nationality;
+    emit(ChangeDropDownValue());
   }
   void changeDate(context){
 
@@ -118,6 +132,11 @@ class StepPageScreenCubit extends Cubit<StepPageScreenStates> {
   void changeDayIndex(int index) {
     emit(StepPageScreenInitialState());
     selectedDayIndex = index;
+    emit(ChangeIndexOfSelectedTexts());
+  }
+  void changeSingleLessonTimeIndex(int index) {
+    emit(StepPageScreenInitialState());
+    selectedSingleLessonPeriodIndex = index;
     emit(ChangeIndexOfSelectedTexts());
   }
 

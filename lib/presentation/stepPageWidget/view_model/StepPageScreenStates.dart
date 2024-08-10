@@ -16,3 +16,4 @@ class GetSubscriptionFailureState extends StepPageScreenStates{
   GetSubscriptionFailureState({required this.errMsg});
 }
 class ChangeDateState extends StepPageScreenStates{}
+class ChangeDropDownValue extends StepPageScreenStates{}

@@ -171,7 +171,7 @@ class _FirstStepScreenState extends State<FirstStepScreen> {
                 icon: Icon(Icons.keyboard_arrow_down),
                 underline: const SizedBox(),
                 isExpanded: true,
-                value: 'ذكر',
+                value: stepPageCubit.selectedGender,
                 items: ['ذكر', 'انثي']
                     .map(
                       (e) => DropdownMenuItem<String>(
@@ -183,6 +183,9 @@ class _FirstStepScreenState extends State<FirstStepScreen> {
                     )
                     .toList(),
                 onChanged: (value) {
+                  if(value!=null){
+                  stepPageCubit.changeGender(value);
+                  }
                   // viewModel.selectedBrand = value!;
                   //viewModel.changeGradeItem(value!);
                 },
@@ -220,7 +223,7 @@ class _FirstStepScreenState extends State<FirstStepScreen> {
                 icon: Icon(Icons.keyboard_arrow_down),
                 underline: const SizedBox(),
                 isExpanded: true,
-                value: 'مصري',
+                value: stepPageCubit.selectedNationaltiy,
                 items: ['اجنبي', 'مصري']
                     .map(
                       (e) => DropdownMenuItem<String>(
@@ -232,6 +235,9 @@ class _FirstStepScreenState extends State<FirstStepScreen> {
                     )
                     .toList(),
                 onChanged: (value) {
+                  if(value!=null){
+                    stepPageCubit.changeNationality(value);
+                  }
                   // viewModel.selectedBrand = value!;
                   //viewModel.changeGradeItem(value!);
                 },

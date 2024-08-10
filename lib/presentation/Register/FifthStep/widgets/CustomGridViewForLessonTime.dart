@@ -34,8 +34,8 @@ class CustomGridViewForLessonTime extends StatelessWidget {
     return Wrap(runSpacing: 8.h,children:[
       for(int i = 0 ;i<texts.length;i++)...[
         CustomTextContainer(text: texts[i],onTap: () {
-          stepPageCubit.changeLessonTimeIndex(i);
-        },isSelected: stepPageCubit.selectedLessonTimeIndex==i,),
+          stepPageCubit.changeSingleLessonTimeIndex(i);
+        },isSelected: stepPageCubit.selectedSingleLessonPeriodIndex==i,),
         SizedBox(width: 5.w,),
       ]
       // CustomTextContainer(text: texts[0],onTap: () {

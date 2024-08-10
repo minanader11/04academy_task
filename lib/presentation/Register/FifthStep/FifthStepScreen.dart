@@ -66,7 +66,7 @@ class FifthStepScreen extends StatelessWidget {
             height: 10.h,
           ),
           CustomText(
-              text: 'الايام المناسبة لك ',
+              text: 'كم حصة اسبوعيا ',
               customTextStyle: BoldStyle(color: blackColor, fontSize: 22.sp)),
           SizedBox(
             height: 5.h,
@@ -76,7 +76,7 @@ class FifthStepScreen extends StatelessWidget {
             height: 10.h,
           ),
           CustomText(
-              text: 'كم عدد الساعات المناسبة لك',
+              text: 'كم عدد الساعات الحصة الواحدة',
               customTextStyle: BoldStyle(color: blackColor, fontSize: 22.sp)),
           SizedBox(
             height: 5.h,
