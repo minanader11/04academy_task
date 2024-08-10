@@ -32,25 +32,31 @@ class CustomGridViewForLessonTime extends StatelessWidget {
     //   ],)
     // ],);
     return Wrap(runSpacing: 8.h,children:[
-      CustomTextContainer(text: texts[0],onTap: () {
-        stepPageCubit.changeLessonTimeIndex(0);
-      },isSelected: stepPageCubit.selectedLessonTimeIndex==0,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[1],onTap: () {
-        stepPageCubit.changeLessonTimeIndex(1);
-      },isSelected: stepPageCubit.selectedLessonTimeIndex==1,),
-      SizedBox(width:5.w),
-      CustomTextContainer(text: texts[2],onTap: () {
-        stepPageCubit.changeLessonTimeIndex(2);
-      },isSelected: stepPageCubit.selectedLessonTimeIndex==2,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[3],onTap: () {
-        stepPageCubit.changeLessonTimeIndex(3);
-      },isSelected: stepPageCubit.selectedLessonTimeIndex==3,),
-      SizedBox(width:5.w),
-      CustomTextContainer(text: texts[4],onTap: () {
-        stepPageCubit.changeLessonTimeIndex(4);
-      },isSelected: stepPageCubit.selectedLessonTimeIndex==4,),
+      for(int i = 0 ;i<texts.length;i++)...[
+        CustomTextContainer(text: texts[i],onTap: () {
+          stepPageCubit.changeLessonTimeIndex(i);
+        },isSelected: stepPageCubit.selectedLessonTimeIndex==i,),
+        SizedBox(width: 5.w,),
+      ]
+      // CustomTextContainer(text: texts[0],onTap: () {
+      //   stepPageCubit.changeLessonTimeIndex(0);
+      // },isSelected: stepPageCubit.selectedLessonTimeIndex==0,),
+      // SizedBox(width: 5.w,),
+      // CustomTextContainer(text: texts[1],onTap: () {
+      //   stepPageCubit.changeLessonTimeIndex(1);
+      // },isSelected: stepPageCubit.selectedLessonTimeIndex==1,),
+      // SizedBox(width:5.w),
+      // CustomTextContainer(text: texts[2],onTap: () {
+      //   stepPageCubit.changeLessonTimeIndex(2);
+      // },isSelected: stepPageCubit.selectedLessonTimeIndex==2,),
+      // SizedBox(width: 5.w,),
+      // CustomTextContainer(text: texts[3],onTap: () {
+      //   stepPageCubit.changeLessonTimeIndex(3);
+      // },isSelected: stepPageCubit.selectedLessonTimeIndex==3,),
+      // SizedBox(width:5.w),
+      // CustomTextContainer(text: texts[4],onTap: () {
+      //   stepPageCubit.changeLessonTimeIndex(4);
+      // },isSelected: stepPageCubit.selectedLessonTimeIndex==4,),
 
 
     ] );

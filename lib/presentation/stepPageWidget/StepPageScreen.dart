@@ -23,7 +23,7 @@ class StepPageScreen extends StatelessWidget {
     return BlocBuilder<StepPageScreenCubit, StepPageScreenStates>(
       builder: (context, state) => Scaffold(
         backgroundColor: whiteColor,
-        body: SingleChildScrollView(
+        body: SingleChildScrollView(controller: stepPageCubit.scrollController,
           child: Container(
             height: h,
             width: w,
@@ -46,7 +46,7 @@ class StepPageScreen extends StatelessWidget {
                 SizedBox(
                   height: 10.h,
                 ),
-                stepPageCubit.tabs[stepPageCubit.tabIndex],
+                Expanded(flex: 15,child: SingleChildScrollView(controller: stepPageCubit.scrollController,child: Container(height: 812.h,child: stepPageCubit.tabs[stepPageCubit.tabIndex]))),
                 //FirstStepScreen(),
                 // IntrinsicHeight(
                 //   child: Row(

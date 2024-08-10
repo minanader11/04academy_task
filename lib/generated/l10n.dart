@@ -1629,6 +1629,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Get ready to learn and develop with us and pay with ease and ease to start your wonderful journey towards an enjoyable and useful education`
+  String get getReadyToLearn {
+    return Intl.message(
+      'Get ready to learn and develop with us and pay with ease and ease to start your wonderful journey towards an enjoyable and useful education',
+      name: 'getReadyToLearn',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

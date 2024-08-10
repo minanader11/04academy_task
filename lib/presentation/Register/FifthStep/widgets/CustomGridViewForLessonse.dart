@@ -32,13 +32,19 @@ class CustomGridViewForLessons extends StatelessWidget {
     //   ],)
     // ],);
     return Wrap(runSpacing: 8.h,children:[
-      CustomTextContainer(text: texts[0],onTap: () {
-        stepPageCubit.changeLessonIndex(0);
-      },isSelected: stepPageCubit.selectedLessonIndex==0,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[1],onTap: () {
-        stepPageCubit.changeLessonIndex(1);
-      },isSelected: stepPageCubit.selectedLessonIndex==1,),
+      for(int i =0;i<texts.length;i++)...[
+        CustomTextContainer(text: texts[i],onTap: () {
+          stepPageCubit.changeLessonIndex(i);
+        },isSelected: stepPageCubit.selectedLessonIndex==i,),
+        SizedBox(width: 5.w,),
+      ],
+      // CustomTextContainer(text: texts[0],onTap: () {
+      //   stepPageCubit.changeLessonIndex(0);
+      // },isSelected: stepPageCubit.selectedLessonIndex==0,),
+      // SizedBox(width: 5.w,),
+      // CustomTextContainer(text: texts[1],onTap: () {
+      //   stepPageCubit.changeLessonIndex(1);
+      // },isSelected: stepPageCubit.selectedLessonIndex==1,),
 
     ] );
   }

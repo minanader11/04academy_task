@@ -32,13 +32,19 @@ class CustomGridViewForPeriod extends StatelessWidget {
     //   ],)
     // ],);
     return Wrap(runSpacing: 8.h,children:[
-      CustomTextContainer(text: texts[0],onTap: () {
-        stepPageCubit.changePeriodIndex(0);
-      },isSelected: stepPageCubit.selectedPeriodIndex==0,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[1],onTap: () {
-        stepPageCubit.changePeriodIndex(1);
-      },isSelected: stepPageCubit.selectedPeriodIndex==1,),
+      for(int i = 0 ;i<texts.length;i++)...[
+        CustomTextContainer(text: texts[i],onTap: () {
+          stepPageCubit.changePeriodIndex(i);
+        },isSelected: stepPageCubit.selectedPeriodIndex==i,),
+        SizedBox(width: 8.w,),
+      ],
+      // CustomTextContainer(text: texts[0],onTap: () {
+      //   stepPageCubit.changePeriodIndex(0);
+      // },isSelected: stepPageCubit.selectedPeriodIndex==0,),
+      // SizedBox(width: 5.w,),
+      // CustomTextContainer(text: texts[1],onTap: () {
+      //   stepPageCubit.changePeriodIndex(1);
+      // },isSelected: stepPageCubit.selectedPeriodIndex==1,),
 
     ] );
   }

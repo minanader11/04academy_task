@@ -8,6 +8,7 @@ class CustomTextField extends StatelessWidget {
   CustomTextField(
       {super.key,
       required this.hint,
+        this.readOnly=false,
       this.keyboardType = TextInputType.text,
       required this.controller,
       required this.validator,
@@ -22,10 +23,10 @@ class CustomTextField extends StatelessWidget {
   Color color;
   Widget? icon;
   int maxLines;
-
+ bool readOnly;
   @override
   Widget build(BuildContext context) {
-    return TextFormField(maxLines: maxLines,
+    return TextFormField(maxLines: maxLines,readOnly: readOnly,
       style: RegularStyle(fontSize: 20.sp).getStyle(),
       decoration: InputDecoration(suffixIcon: suffixIcon? icon :null,
         hintText: hint,

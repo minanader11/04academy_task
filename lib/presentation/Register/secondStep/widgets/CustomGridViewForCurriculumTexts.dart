@@ -10,26 +10,34 @@ class CustomGridViewForCurriculumTexts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var stepPageCubit=BlocProvider.of<StepPageScreenCubit>(context);
-    return Column(children: [
-      Row(children: [
-        CustomTextContainer(text: texts[0],onTap: () {
-          stepPageCubit.changeCurriculumIndexText(0);
-        },isSelected: stepPageCubit.selectedCurriculum==0,),
+    // return Column(children: [
+    //   Row(children: [
+    //     CustomTextContainer(text: texts[0],onTap: () {
+    //       stepPageCubit.changeCurriculumIndexText(0);
+    //     },isSelected: stepPageCubit.selectedCurriculum==0,),
+    //     SizedBox(width: 20.w,),
+    //     CustomTextContainer(text: texts[1],onTap: () {
+    //       stepPageCubit.changeCurriculumIndexText(1);
+    //     },isSelected: stepPageCubit.selectedCurriculum==1,),
+    //   ],),
+    //   SizedBox(height: 10.h,),
+    //   Row(children: [
+    //     CustomTextContainer(text: texts[2],onTap: () {
+    //       stepPageCubit.changeCurriculumIndexText(2);
+    //     },isSelected: stepPageCubit.selectedCurriculum==2,),
+    //     SizedBox(width: 20.w,),
+    //     CustomTextContainer(text: texts[3],onTap: () {
+    //       stepPageCubit.changeCurriculumIndexText(3);
+    //     },isSelected: stepPageCubit.selectedCurriculum==3,),
+    //   ],)
+    // ],);
+    return Wrap(runSpacing: 8.h,children: [
+      for(int i = 0 ;i<texts.length;i++) ...[
+    CustomTextContainer(text: texts[i],onTap: () {
+          stepPageCubit.changeCurriculumIndexText(i);
+        },isSelected: stepPageCubit.selectedCurriculum==i,),
         SizedBox(width: 20.w,),
-        CustomTextContainer(text: texts[1],onTap: () {
-          stepPageCubit.changeCurriculumIndexText(1);
-        },isSelected: stepPageCubit.selectedCurriculum==1,),
-      ],),
-      SizedBox(height: 10.h,),
-      Row(children: [
-        CustomTextContainer(text: texts[2],onTap: () {
-          stepPageCubit.changeCurriculumIndexText(2);
-        },isSelected: stepPageCubit.selectedCurriculum==2,),
-        SizedBox(width: 20.w,),
-        CustomTextContainer(text: texts[3],onTap: () {
-          stepPageCubit.changeCurriculumIndexText(3);
-        },isSelected: stepPageCubit.selectedCurriculum==3,),
-      ],)
+      ]
     ],);
   }
 }

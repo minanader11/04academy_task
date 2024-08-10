@@ -32,33 +32,39 @@ class CustomGridViewForDays extends StatelessWidget {
     //   ],)
     // ],);
     return Wrap(runSpacing: 8.h,children:[
-    CustomTextContainer(text: texts[0],onTap: () {
-            stepPageCubit.changeSubjectIndex(0);
-          },isSelected: stepPageCubit.selectedSubjectIndex==0,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[1],onTap: () {
-        stepPageCubit.changeSubjectIndex(1);
-      },isSelected: stepPageCubit.selectedSubjectIndex==1,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[2],onTap: () {
-        stepPageCubit.changeSubjectIndex(2);
-      },isSelected: stepPageCubit.selectedSubjectIndex==2,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[3],onTap: () {
-        stepPageCubit.changeSubjectIndex(3);
-      },isSelected: stepPageCubit.selectedSubjectIndex==3,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[4],onTap: () {
-        stepPageCubit.changeSubjectIndex(4);
-      },isSelected: stepPageCubit.selectedSubjectIndex==4,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[5],onTap: () {
-        stepPageCubit.changeSubjectIndex(5);
-      },isSelected: stepPageCubit.selectedSubjectIndex==5,),
-      SizedBox(width: 5.w,),
-      CustomTextContainer(text: texts[6],onTap: () {
-        stepPageCubit.changeSubjectIndex(6);
-      },isSelected: stepPageCubit.selectedSubjectIndex==6,),
+      for(int i = 0 ;i<texts.length;i++)...[
+        CustomTextContainer(text: texts[i],onTap: () {
+          stepPageCubit.changeSubjectIndex(i);
+        },isSelected: stepPageCubit.selectedSubjectIndex==i,),
+        SizedBox(width: 8.w,),
+      ],
+    // CustomTextContainer(text: texts[0],onTap: () {
+    //         stepPageCubit.changeSubjectIndex(0);
+    //       },isSelected: stepPageCubit.selectedSubjectIndex==0,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[1],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(1);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==1,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[2],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(2);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==2,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[3],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(3);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==3,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[4],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(4);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==4,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[5],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(5);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==5,),
+    //   SizedBox(width: 5.w,),
+    //   CustomTextContainer(text: texts[6],onTap: () {
+    //     stepPageCubit.changeSubjectIndex(6);
+    //   },isSelected: stepPageCubit.selectedSubjectIndex==6,),
     ] );
   }
 }

@@ -13,8 +13,9 @@ import 'package:madrasa_task/presentation/stepPageWidget/view_model/StepPageScre
 import 'package:madrasa_task/presentation/stepPageWidget/view_model/StepPageScreenStates.dart';
 
 class SecondStepScreen extends StatelessWidget {
-  const SecondStepScreen({super.key});
-
+ SecondStepScreen({super.key});
+  var h = 812.h;
+  var w = 375.w;
   @override
   Widget build(BuildContext context) {
     var stepPageCubit=BlocProvider.of<StepPageScreenCubit>(context);
@@ -99,7 +100,10 @@ class SecondStepScreen extends StatelessWidget {
             'المنهج الامريكي',
             'اخري',
             'المنهج الوزاري'
-          ])
+          ]),
+
+
+
 
           //CustomTextContainer(text: 'رياض الاطفال')
         ],

@@ -107,6 +107,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgot": MessageLookupByLibrary.simpleMessage("I forgot"),
         "from": MessageLookupByLibrary.simpleMessage("From"),
         "gender": MessageLookupByLibrary.simpleMessage("Gender"),
+        "getReadyToLearn": MessageLookupByLibrary.simpleMessage(
+            "Get ready to learn and develop with us and pay with ease and ease to start your wonderful journey towards an enjoyable and useful education"),
         "hello": MessageLookupByLibrary.simpleMessage("Hello,"),
         "iAlreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("I Already Have An Account"),

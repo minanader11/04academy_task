@@ -8,6 +8,7 @@ import 'package:madrasa_task/core/widgets/custom_text_field.dart';
 import 'package:madrasa_task/generated/l10n.dart';
 import 'package:madrasa_task/presentation/Register/FifthStep/widgets/CustomGridViewForLessonTime.dart';
 import 'package:madrasa_task/presentation/Register/FifthStep/widgets/CustomGridViewForLessonse.dart';
+import 'package:madrasa_task/presentation/Register/FifthStep/widgets/CustomListViewForSubscriptions.dart';
 import 'package:madrasa_task/presentation/Register/FifthStep/widgets/CustomSubscriptionContainer.dart';
 import 'package:madrasa_task/presentation/Register/FourthStep/widgets/CustomGridViewForDays.dart';
 import 'package:madrasa_task/presentation/Register/FourthStep/widgets/CustomGridViewForPeriod.dart';
@@ -98,31 +99,32 @@ class FifthStepScreen extends StatelessWidget {
           ),
           // CustomSubscriptionContainer(
           //     subscriptionResponseEntity: stepPageCubit.subscriptions[0]),
-          Container(
-            color: whiteColor,
-            width: 200.w,
-            height: 300.h,
-            //padding: EdgeInsetsDirectional.only(start: 10.w),
-            child: ListView.builder(padding: EdgeInsets.zero,
-              itemCount: stepPageCubit.subscriptions.length,
-              itemBuilder: (context, index) => Padding(
-                padding: EdgeInsetsDirectional.only(start: 10.w,top: 10.h),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    CustomSubscriptionContainer( isSelected: stepPageCubit.selectedSubscriptionIndex==index,onTap: (){
-                      stepPageCubit.changeSubscriptionIndex(index);
-                    },
-                        subscriptionResponseEntity:
-                            stepPageCubit.subscriptions[index]),
-                    SizedBox(
-                      height: 10.h,
-                    )
-                  ],
-                ),
-              ),
-            ),
-          )
+          // Container(
+          //   color: whiteColor,
+          //   width: 200.w,
+          //   height: 300.h,
+          //   //padding: EdgeInsetsDirectional.only(start: 10.w),
+          //   child: ListView.builder(padding: EdgeInsets.zero,
+          //     itemCount: stepPageCubit.subscriptions.length,
+          //     itemBuilder: (context, index) => Padding(
+          //       padding: EdgeInsetsDirectional.only(start: 10.w,top: 10.h),
+          //       child: Column(
+          //         crossAxisAlignment: CrossAxisAlignment.start,
+          //         children: [
+          //           CustomSubscriptionContainer( isSelected: stepPageCubit.selectedSubscriptionIndex==index,onTap: (){
+          //             stepPageCubit.changeSubscriptionIndex(index);
+          //           },
+          //               subscriptionResponseEntity:
+          //                   stepPageCubit.subscriptions[index]),
+          //           SizedBox(
+          //             height: 10.h,
+          //           )
+          //         ],
+          //       ),
+          //     ),
+          //   ),
+          // )
+          CustomListViewForSubscritptions(subscriptions: stepPageCubit.subscriptions)
         ],
       ),
     );

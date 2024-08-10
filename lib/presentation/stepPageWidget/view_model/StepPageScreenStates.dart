@@ -15,3 +15,4 @@ class GetSubscriptionFailureState extends StepPageScreenStates{
   String errMsg;
   GetSubscriptionFailureState({required this.errMsg});
 }
+class ChangeDateState extends StepPageScreenStates{}

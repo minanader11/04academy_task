@@ -7,11 +7,13 @@ import 'package:madrasa_task/presentation/Register/secondStep/widgets/CustomText
 import 'package:madrasa_task/presentation/stepPageWidget/view_model/StepPageScreenCubit.dart';
 
 class CustomListViewForSubscritptions extends StatelessWidget {
-  CustomListViewForSubscritptions({super.key,required this.subscriptions});
+  CustomListViewForSubscritptions({super.key, required this.subscriptions});
+
   List<SubscriptionResponseEntity> subscriptions;
+
   @override
   Widget build(BuildContext context) {
-    var stepPageCubit=BlocProvider.of<StepPageScreenCubit>(context);
+    var stepPageCubit = BlocProvider.of<StepPageScreenCubit>(context);
     // return Column(children: [
     //   Row(children: [
     //     CustomTextContainer(text: texts[0],onTap: () {
@@ -33,17 +35,23 @@ class CustomListViewForSubscritptions extends StatelessWidget {
     //     },isSelected: stepPageCubit.selectedClassRoom==3,),
     //   ],)
     // ],);
-    return SingleChildScrollView(
-      child: Container(height: 200.h,
-        child: Column(children: [
-          for(int i = 0 ; i<subscriptions.length;i++)...[
-            CustomSubscriptionContainer(subscriptionResponseEntity: subscriptions[i]),
-            SizedBox(height: 10.h,),
+    return Padding(
+      padding: EdgeInsetsDirectional.only(start: 10.w),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (int i = 0; i < subscriptions.length; i++) ...[
+            CustomSubscriptionContainer(onTap: () {
+              stepPageCubit.changeSubscriptionIndex(i);
+            },
+                isSelected: stepPageCubit.selectedSubscriptionIndex == i,
+                subscriptionResponseEntity: subscriptions[i]),
+            SizedBox(
+              height: 10.h,
+            ),
           ]
-
-        ],),
+        ],
       ),
     );
-
   }
 }
