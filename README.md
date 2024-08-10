@@ -1,7 +1,12 @@
 # madrasa_task
 
 Dear 04Academy, 
-I have some notes on design and apis,some of post api's body requires some parameters that doesn't appear on the design and some of textfields in design doesn't exist in the body of api , the arabic response of api gives me a strange characters (i don't know if it happens to me only or not) , I have tried to implement the ui to look like the video as mush as i could.
+Notes on Design and API Implementation
+Design and API Discrepancies: Some POST API requests require parameters that are not reflected in the design. Additionally, certain text fields present in the design do not correspond to any parameters in the API body.
+Arabic Response Issue: The API's Arabic responses occasionally display as strange characters. I'm not sure if this issue is unique to me.
+UI Implementation: I've done my best to implement the UI as closely as possible to the reference video.
 
-
+Time Spent
 Total time spent: 10 hours.
+
+
