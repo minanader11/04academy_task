@@ -1,16 +1,7 @@
 # madrasa_task
 
-A new Flutter project.
+Dear 04Academy, 
+I have some notes on design and apis,some of post api's body requires some parameters that doesn't appear on the design and some of textfields in design doesn't exist in the body of api , the arabic response of api gives me a strange characters (i don't know if it happens to me only or not) , I have tried to implement the ui to look like the video as mush as i could.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Total time spent: 10 hours.
