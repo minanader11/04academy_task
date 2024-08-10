@@ -27,8 +27,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "aSeat": MessageLookupByLibrary.simpleMessage("A seat"),
         "accountCreatedSuccessfully": MessageLookupByLibrary.simpleMessage(
             "Your account has been created successfully"),
-        "accountSettings":
-            MessageLookupByLibrary.simpleMessage("Account Settings"),
         "addCreditCard":
             MessageLookupByLibrary.simpleMessage("Add Credit Card"),
         "addYourAdd":
@@ -38,14 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYou": MessageLookupByLibrary.simpleMessage(
             "Are you a student seeking to expand your horizons and open the doors of knowledge? A parent who would like to follow your son’s educational journey and support him in discovering his passion"),
         "bankCards": MessageLookupByLibrary.simpleMessage("Bank Cards"),
-        "bill": MessageLookupByLibrary.simpleMessage("Bill"),
         "birthDate": MessageLookupByLibrary.simpleMessage("Birth Date"),
-        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "cancelTicket": MessageLookupByLibrary.simpleMessage("Cancel Ticket"),
-        "changeLanguage":
-            MessageLookupByLibrary.simpleMessage("Change Language"),
-        "changePayment":
-            MessageLookupByLibrary.simpleMessage("Change payment method"),
         "chargeDetails":
             MessageLookupByLibrary.simpleMessage("Charge .Details"),
         "chargeNow": MessageLookupByLibrary.simpleMessage("Charge Now"),
@@ -57,15 +49,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseTrain": MessageLookupByLibrary.simpleMessage("Choose Train"),
         "chooseYourLevel": MessageLookupByLibrary.simpleMessage(
             "Choose the level of study that suits you and you will be guaranteed the best educational options available"),
-        "code": MessageLookupByLibrary.simpleMessage("Code"),
         "codeCheck": MessageLookupByLibrary.simpleMessage("Enter Code"),
         "codeCheckOnly": MessageLookupByLibrary.simpleMessage("Code Check"),
         "comsri": MessageLookupByLibrary.simpleMessage("comsri"),
         "confPassword":
             MessageLookupByLibrary.simpleMessage("Confirm Password"),
-        "confirmReservation":
-            MessageLookupByLibrary.simpleMessage("Confirm Reservation"),
-        "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
         "createYourPackage": MessageLookupByLibrary.simpleMessage(
             "Create the package that suits your needs and we will guarantee you the maximum benefit from every session"),
         "creditCardSuccessfullyLinked": MessageLookupByLibrary.simpleMessage(
@@ -77,7 +65,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "done": MessageLookupByLibrary.simpleMessage("Done"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("don\'t Have An Account?"),
-        "editAccount": MessageLookupByLibrary.simpleMessage("Edit Account"),
         "egr": MessageLookupByLibrary.simpleMessage(
             "Now EGR has two-factor authentication feature, try it,"),
         "egr2": MessageLookupByLibrary.simpleMessage(
@@ -99,26 +86,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "fawryPay": MessageLookupByLibrary.simpleMessage("Fawry Pay"),
         "fillData": MessageLookupByLibrary.simpleMessage("Please fill data"),
         "fillRequired": MessageLookupByLibrary.simpleMessage("Required"),
-        "findYourStation":
-            MessageLookupByLibrary.simpleMessage("Find Your Station"),
         "firstName": MessageLookupByLibrary.simpleMessage("First Name"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("forgetPassword?"),
         "forgot": MessageLookupByLibrary.simpleMessage("I forgot"),
-        "from": MessageLookupByLibrary.simpleMessage("From"),
         "gender": MessageLookupByLibrary.simpleMessage("Gender"),
         "getReadyToLearn": MessageLookupByLibrary.simpleMessage(
             "Get ready to learn and develop with us and pay with ease and ease to start your wonderful journey towards an enjoyable and useful education"),
-        "hello": MessageLookupByLibrary.simpleMessage("Hello,"),
         "iAlreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("I Already Have An Account"),
         "iDNumber": MessageLookupByLibrary.simpleMessage("ID Number"),
-        "instructions": MessageLookupByLibrary.simpleMessage("Instructions"),
         "invalidEmail": MessageLookupByLibrary.simpleMessage("invalidEmail"),
         "invalidPassword":
             MessageLookupByLibrary.simpleMessage("Invalid Password"),
-        "isPerson": MessageLookupByLibrary.simpleMessage(
-            "The traveler is the account holder"),
         "isReq": MessageLookupByLibrary.simpleMessage("Is Required"),
         "lastName": MessageLookupByLibrary.simpleMessage("Last Name"),
         "loading": MessageLookupByLibrary.simpleMessage(""),
@@ -128,7 +108,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "minimumAmountPounds": MessageLookupByLibrary.simpleMessage(
             "The minimum amount is 10 pounds"),
         "mobVal": MessageLookupByLibrary.simpleMessage("Check mobile"),
-        "more": MessageLookupByLibrary.simpleMessage("More"),
         "myTrips": MessageLookupByLibrary.simpleMessage("My Trips"),
         "nationalId": MessageLookupByLibrary.simpleMessage("National Id"),
         "nationalIdNumber": MessageLookupByLibrary.simpleMessage("National Id"),
@@ -144,20 +123,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nowTryOurServices": MessageLookupByLibrary.simpleMessage(
             "You can now try our services."),
         "ok": MessageLookupByLibrary.simpleMessage("Ok"),
-        "onceAgain": MessageLookupByLibrary.simpleMessage("Once Again"),
-        "openNoti": MessageLookupByLibrary.simpleMessage("open Notification"),
         "ourWallet": MessageLookupByLibrary.simpleMessage("Our Wallet"),
         "parent": MessageLookupByLibrary.simpleMessage("Parent"),
         "passCheck": MessageLookupByLibrary.simpleMessage("Check Password"),
-        "passenger": MessageLookupByLibrary.simpleMessage("Passenger"),
         "passengerName": MessageLookupByLibrary.simpleMessage("Passenger name"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "passwordRequired":
             MessageLookupByLibrary.simpleMessage("Password Required"),
         "payMethod": MessageLookupByLibrary.simpleMessage("Pay Method"),
-        "paymentOption": MessageLookupByLibrary.simpleMessage("Payment Option"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone Number"),
-        "price": MessageLookupByLibrary.simpleMessage("Price"),
         "recharge": MessageLookupByLibrary.simpleMessage("Re-charge"),
         "rechargeBalanceAmount": MessageLookupByLibrary.simpleMessage(
             "Recharge your balance with the amount you want"),
@@ -169,13 +143,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerYourAccount":
             MessageLookupByLibrary.simpleMessage("Register Your Account"),
         "required": MessageLookupByLibrary.simpleMessage("required"),
-        "reservation": MessageLookupByLibrary.simpleMessage("Reserve"),
-        "reservationDate":
-            MessageLookupByLibrary.simpleMessage("Reservation Date"),
-        "reserve": MessageLookupByLibrary.simpleMessage("Reserve"),
-        "reserveTicket": MessageLookupByLibrary.simpleMessage("Reserve Ticket"),
         "scanTheCode": MessageLookupByLibrary.simpleMessage("Scan The Code"),
-        "searchTicket": MessageLookupByLibrary.simpleMessage("Ticket Search"),
         "seatNumber": MessageLookupByLibrary.simpleMessage("Seat Number"),
         "securityUpdates":
             MessageLookupByLibrary.simpleMessage("Security Updates"),
@@ -184,7 +152,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "selectUserType":
             MessageLookupByLibrary.simpleMessage("Please Select Your Type"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
-        "service": MessageLookupByLibrary.simpleMessage("Services"),
         "shippedViaCode":
             MessageLookupByLibrary.simpleMessage("Shipped via code"),
         "signIn": MessageLookupByLibrary.simpleMessage("Sign In"),
@@ -192,8 +159,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "statue": MessageLookupByLibrary.simpleMessage("Status"),
         "student": MessageLookupByLibrary.simpleMessage("Student"),
         "success": MessageLookupByLibrary.simpleMessage("success"),
-        "suggestionsAndComplaints":
-            MessageLookupByLibrary.simpleMessage("Suggestions And Complaints"),
         "thankYou": MessageLookupByLibrary.simpleMessage(
             "Thank you, we are waiting for you to begin an inspiring and fruitful learning journey"),
         "theAccountHasBeenSetUpSuccessfully":
@@ -201,38 +166,21 @@ class MessageLookup extends MessageLookupByLibrary {
                 "The Account Has Been Set Up Successfully!"),
         "theCreditCardIsConnected": MessageLookupByLibrary.simpleMessage(
             "The Credit Card Is Connected"),
-        "ticketCount": MessageLookupByLibrary.simpleMessage("Ticket Count"),
         "ticketNumber": MessageLookupByLibrary.simpleMessage("Ticket Number"),
         "ticketPurchased":
             MessageLookupByLibrary.simpleMessage("A ticket has been purchased"),
-        "to": MessageLookupByLibrary.simpleMessage("To"),
         "today": MessageLookupByLibrary.simpleMessage("Today"),
-        "total": MessageLookupByLibrary.simpleMessage("Total"),
-        "trainInfo": MessageLookupByLibrary.simpleMessage("Train Info"),
         "trainNumber": MessageLookupByLibrary.simpleMessage("TrainNumber"),
-        "travel": MessageLookupByLibrary.simpleMessage("Travel"),
-        "travelClass": MessageLookupByLibrary.simpleMessage("Ticket Class"),
-        "travelFrom": MessageLookupByLibrary.simpleMessage("Travel From"),
-        "travelInfo": MessageLookupByLibrary.simpleMessage("Travel Info"),
-        "travelInfoText": MessageLookupByLibrary.simpleMessage(
-            "The main passenger with the national number registered on the ticket must be present on the train \nTravel time, if you wish to refund your ticket, it will be through the ticket windows\n At the stations"),
-        "travelTo": MessageLookupByLibrary.simpleMessage("Travel To"),
-        "travelingFrom": MessageLookupByLibrary.simpleMessage("Traveling From"),
-        "travelingTo": MessageLookupByLibrary.simpleMessage("traveling To"),
         "tripDuration": MessageLookupByLibrary.simpleMessage("Trip Duration"),
         "userName": MessageLookupByLibrary.simpleMessage("userName"),
         "wait": MessageLookupByLibrary.simpleMessage("Wait"),
-        "wallet": MessageLookupByLibrary.simpleMessage("Wallet"),
         "weAreHere": MessageLookupByLibrary.simpleMessage(
             "We are here to help you in your educational journey. Confidently fill out your contact information so we can guide you step by step"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome back"),
-        "whereDoYouWantToGo":
-            MessageLookupByLibrary.simpleMessage("Where Do You Want To Go?"),
         "withUsNow": MessageLookupByLibrary.simpleMessage("With Us Now"),
         "writeYourSuggestions":
             MessageLookupByLibrary.simpleMessage("Write Your Suggestions"),
         "yes": MessageLookupByLibrary.simpleMessage("yes"),
-        "yourName": MessageLookupByLibrary.simpleMessage("Full Name"),
-        "yourTicket": MessageLookupByLibrary.simpleMessage("Your Ticket")
+        "yourName": MessageLookupByLibrary.simpleMessage("Full Name")
       };
 }

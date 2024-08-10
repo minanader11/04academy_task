@@ -27,8 +27,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "aSeat": MessageLookupByLibrary.simpleMessage("مقعد"),
         "accountCreatedSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم إنشاء حسابك بنجاح."),
-        "accountSettings":
-            MessageLookupByLibrary.simpleMessage("اعدادات الحســـاب"),
         "addCreditCard":
             MessageLookupByLibrary.simpleMessage("اضف كارت الائتمان"),
         "addYourAdd": MessageLookupByLibrary.simpleMessage("ضع اعلانك هنا !"),
@@ -37,13 +35,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "areYou": MessageLookupByLibrary.simpleMessage(
             "هل انت طالب تسعي لتوسيع افاقك و فتح \nابواب المعرفة؟ ام ولي امر تود متابعة رحلة \n ابنك التعليمية و دعمه في اكتشاف شغفه"),
         "bankCards": MessageLookupByLibrary.simpleMessage("كروت بنكيه"),
-        "bill": MessageLookupByLibrary.simpleMessage("الفاتـــورة"),
         "birthDate": MessageLookupByLibrary.simpleMessage("تاريخ الميلاد"),
-        "cancel": MessageLookupByLibrary.simpleMessage("إلغاء"),
         "cancelTicket": MessageLookupByLibrary.simpleMessage("الغاء الحجز"),
-        "changeLanguage": MessageLookupByLibrary.simpleMessage("تغيير اللغه"),
-        "changePayment":
-            MessageLookupByLibrary.simpleMessage("تغير طريقه الدفع"),
         "chargeDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الشحن"),
         "chargeNow": MessageLookupByLibrary.simpleMessage("اشحن دلوقتى"),
         "chargeWallet": MessageLookupByLibrary.simpleMessage("شحن المحفظة"),
@@ -54,15 +47,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "chooseTrain": MessageLookupByLibrary.simpleMessage("اختـار قــطارك"),
         "chooseYourLevel": MessageLookupByLibrary.simpleMessage(
             "اختر المرحلة الدراسية التي تناسبك و ستضمن لك افضل الخيارات التعليمية  المتاحة"),
-        "code": MessageLookupByLibrary.simpleMessage("كــود خــصم"),
         "codeCheck": MessageLookupByLibrary.simpleMessage("ادخل الكود للفحص"),
         "codeCheckOnly": MessageLookupByLibrary.simpleMessage("كود الفحص"),
         "comsri": MessageLookupByLibrary.simpleMessage(
             "يتم الحصول عليها من الكمساري"),
         "confPassword": MessageLookupByLibrary.simpleMessage("تأكيد كلمة السر"),
-        "confirmReservation":
-            MessageLookupByLibrary.simpleMessage("تأكيد الحجز"),
-        "contactUs": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
         "createYourPackage": MessageLookupByLibrary.simpleMessage(
             "كون الباقة اللتي تتناسب مع احتياجك و سنضمن لك اقصي استفادة من كل حصة"),
         "creditCardSuccessfullyLinked": MessageLookupByLibrary.simpleMessage(
@@ -74,7 +63,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "done": MessageLookupByLibrary.simpleMessage("تم"),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("لا تملك حساب؟"),
-        "editAccount": MessageLookupByLibrary.simpleMessage("تعديل الحســـاب"),
         "egr": MessageLookupByLibrary.simpleMessage(
             "الآن لدى EGR ميزة المصادقة الثنائية، جربها"),
         "egr2": MessageLookupByLibrary.simpleMessage(
@@ -97,26 +85,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "fawryPay": MessageLookupByLibrary.simpleMessage("فورى باى"),
         "fillData": MessageLookupByLibrary.simpleMessage("برجاء ملئ البيانات"),
         "fillRequired": MessageLookupByLibrary.simpleMessage("مطلوب"),
-        "findYourStation":
-            MessageLookupByLibrary.simpleMessage("دور على محطتك"),
         "firstName": MessageLookupByLibrary.simpleMessage("الاسم الاول"),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة السر؟"),
         "forgot": MessageLookupByLibrary.simpleMessage("لقد نسيت"),
-        "from": MessageLookupByLibrary.simpleMessage("من"),
         "gender": MessageLookupByLibrary.simpleMessage("الجنس"),
         "getReadyToLearn": MessageLookupByLibrary.simpleMessage(
             "استعد للتعلم و التطور معنا و قم بالدفع بكل يسر و سهولة للبدء في رحلتك الرائعة نحو التعليم الممتع و المفيد"),
-        "hello": MessageLookupByLibrary.simpleMessage("اهلا,"),
         "iAlreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("املك حساب بالفعل"),
         "iDNumber": MessageLookupByLibrary.simpleMessage("رقم الهوية"),
-        "instructions": MessageLookupByLibrary.simpleMessage("التعليمات"),
         "invalidEmail": MessageLookupByLibrary.simpleMessage(
             "الرجاء إدخال البريد الالكتروني بالشكل الصحيح"),
         "invalidPassword": MessageLookupByLibrary.simpleMessage("كلمة سر خطأ"),
-        "isPerson":
-            MessageLookupByLibrary.simpleMessage("المسافر هو صاحب الحساب"),
         "isReq": MessageLookupByLibrary.simpleMessage("مطلوب"),
         "lastName": MessageLookupByLibrary.simpleMessage("الاسم الأخير"),
         "loading": MessageLookupByLibrary.simpleMessage(""),
@@ -127,12 +108,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "minimumAmountPounds":
             MessageLookupByLibrary.simpleMessage("الحد الادنى للمبلغ ١٠ جنيه"),
         "mobVal": MessageLookupByLibrary.simpleMessage("تأكد من رقم الهاتف"),
-        "more": MessageLookupByLibrary.simpleMessage("المزيد"),
         "myTrips": MessageLookupByLibrary.simpleMessage("رحلاتي"),
-        "nationalId": MessageLookupByLibrary.simpleMessage("رقم البطاقة"),
         "nationalIdNumber":
             MessageLookupByLibrary.simpleMessage("الرقم القومى"),
-        "nationalType": MessageLookupByLibrary.simpleMessage("نوع البطاقة"),
         "nationality": MessageLookupByLibrary.simpleMessage("الجنسية"),
         "newRegistration": MessageLookupByLibrary.simpleMessage("تسجيل جديد"),
         "neww": MessageLookupByLibrary.simpleMessage("جديد"),
@@ -143,21 +121,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "nowTryOurServices":
             MessageLookupByLibrary.simpleMessage("تستطيع الآن تجربة خدماتنا."),
         "ok": MessageLookupByLibrary.simpleMessage("موافقة"),
-        "onceAgain": MessageLookupByLibrary.simpleMessage("مرة اخرى"),
-        "openNoti": MessageLookupByLibrary.simpleMessage("تشغيل الاشعارات"),
         "ourWallet": MessageLookupByLibrary.simpleMessage("محفظتنا"),
         "parent": MessageLookupByLibrary.simpleMessage("ولي امر"),
         "passCheck": MessageLookupByLibrary.simpleMessage("تأكد من كلمة"),
-        "passenger": MessageLookupByLibrary.simpleMessage("الراكب"),
         "passengerName": MessageLookupByLibrary.simpleMessage("اسم الراكب"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "passwordRequired":
             MessageLookupByLibrary.simpleMessage("كلمة السر مطلوبة"),
         "payMethod": MessageLookupByLibrary.simpleMessage("طريقة الدفع"),
-        "paymentOption":
-            MessageLookupByLibrary.simpleMessage("طريــقة الدفــع"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
-        "price": MessageLookupByLibrary.simpleMessage("السعر"),
         "recharge": MessageLookupByLibrary.simpleMessage("اعــاده الشحن"),
         "rechargeBalanceAmount": MessageLookupByLibrary.simpleMessage(
             "اشحن رصيدك بالمبلغ الذي تريده"),
@@ -167,17 +139,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "registerDone":
             MessageLookupByLibrary.simpleMessage("تم انشاء الحساب بنجاح"),
         "registerNow": MessageLookupByLibrary.simpleMessage("سجل الان"),
-        "registerYourAccount":
-            MessageLookupByLibrary.simpleMessage("سجل حسابك"),
         "required": MessageLookupByLibrary.simpleMessage("مطلوب"),
-        "reservation": MessageLookupByLibrary.simpleMessage("أحجــــــــــــز"),
-        "reservationDate": MessageLookupByLibrary.simpleMessage("تاريخ الحجز"),
-        "reserve": MessageLookupByLibrary.simpleMessage("حجـــز / صــرف"),
-        "reserveTicket":
-            MessageLookupByLibrary.simpleMessage("حجــز التــذكرة"),
         "scanTheCode": MessageLookupByLibrary.simpleMessage("قم بمسح الرمز"),
-        "searchTicket":
-            MessageLookupByLibrary.simpleMessage("ابحــث عن تذكــرة"),
         "seatNumber": MessageLookupByLibrary.simpleMessage("رقم المقعد"),
         "securityUpdates":
             MessageLookupByLibrary.simpleMessage("تحديثات امنية!"),
@@ -186,7 +149,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "selectUserType":
             MessageLookupByLibrary.simpleMessage("برجاء تحديد نوع المستخدم"),
         "send": MessageLookupByLibrary.simpleMessage("ارسل"),
-        "service": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
         "shippedViaCode":
             MessageLookupByLibrary.simpleMessage("تم الشحن عن طريق كود"),
         "signIn": MessageLookupByLibrary.simpleMessage("تسجيل دخول"),
@@ -194,46 +156,26 @@ class MessageLookup extends MessageLookupByLibrary {
         "statue": MessageLookupByLibrary.simpleMessage("الحالة"),
         "student": MessageLookupByLibrary.simpleMessage("طالب"),
         "success": MessageLookupByLibrary.simpleMessage("النجاح"),
-        "suggestionsAndComplaints":
-            MessageLookupByLibrary.simpleMessage("المقترحات والشكاوى"),
         "thankYou": MessageLookupByLibrary.simpleMessage(
-            "ِشكرا علي نحن في انتظارك لنبدا رحلة تعلم ملهمة و مثمرة"),
+            "ِشكرا علي ثقتك نحن في انتظارك لنبدا رحلة تعلم ملهمة و مثمرة"),
         "theAccountHasBeenSetUpSuccessfully":
             MessageLookupByLibrary.simpleMessage("تم إعداد الحساب بنجاح!"),
         "theCreditCardIsConnected":
             MessageLookupByLibrary.simpleMessage("بطاقة الائتمان متصلة"),
-        "ticketCount": MessageLookupByLibrary.simpleMessage("عدد التذاكر"),
         "ticketNumber": MessageLookupByLibrary.simpleMessage("رقم التذكرة"),
         "ticketPurchased":
             MessageLookupByLibrary.simpleMessage("تم شراء تذكرة"),
-        "to": MessageLookupByLibrary.simpleMessage("الي"),
         "today": MessageLookupByLibrary.simpleMessage("اليوم"),
-        "total": MessageLookupByLibrary.simpleMessage("الاجمالي"),
-        "trainInfo": MessageLookupByLibrary.simpleMessage("معلومات القطــار"),
         "trainNumber": MessageLookupByLibrary.simpleMessage("رقم القطار"),
-        "travel": MessageLookupByLibrary.simpleMessage("السفر"),
-        "travelClass": MessageLookupByLibrary.simpleMessage("درجة السفر"),
-        "travelFrom": MessageLookupByLibrary.simpleMessage("السفر من"),
-        "travelInfo": MessageLookupByLibrary.simpleMessage("تعليمات السفر"),
-        "travelInfoText": MessageLookupByLibrary.simpleMessage(
-            "يجب تواجد الراكب الرئيسى صاحب الرقم القومى المسجل بالتذكرة بالقطار \nوقت السفر,فى حالة الرغبة فى رد التذكرة يكون من خلال شبابيك التذاكر\n بالمحطات"),
-        "travelTo": MessageLookupByLibrary.simpleMessage("السفر الي"),
-        "travelingFrom": MessageLookupByLibrary.simpleMessage("السفر من"),
-        "travelingTo": MessageLookupByLibrary.simpleMessage("السفر الي"),
         "tripDuration": MessageLookupByLibrary.simpleMessage("زمن الرحلة"),
         "userName": MessageLookupByLibrary.simpleMessage("اسم المستخدم"),
         "wait": MessageLookupByLibrary.simpleMessage("انتظر"),
-        "wallet": MessageLookupByLibrary.simpleMessage("مـــحفظتــنا"),
         "weAreHere": MessageLookupByLibrary.simpleMessage(
             "نحن هنا لمساعدتك في رحلتك التعليمية . املا بكل ثقة بيانات الاتصال الخاصة بك لنتمكن من توجيهك خطوة خطوة "),
         "welcome": MessageLookupByLibrary.simpleMessage("مرحبا بعودتك"),
-        "whereDoYouWantToGo":
-            MessageLookupByLibrary.simpleMessage("عايز تروح فين؟"),
         "withUsNow": MessageLookupByLibrary.simpleMessage("معنا الان"),
         "writeYourSuggestions":
             MessageLookupByLibrary.simpleMessage("اكتب مقترحاتك "),
-        "yes": MessageLookupByLibrary.simpleMessage("نعم"),
-        "yourName": MessageLookupByLibrary.simpleMessage("الاسم بالكامل"),
-        "yourTicket": MessageLookupByLibrary.simpleMessage("تــــــذكرتك")
+        "yes": MessageLookupByLibrary.simpleMessage("نعم")
       };
 }
