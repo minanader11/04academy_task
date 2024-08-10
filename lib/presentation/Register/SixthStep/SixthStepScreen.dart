@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:madrasa_task/core/utilities/CustomText.dart';
 import 'package:madrasa_task/core/utilities/CustomTextStyle.dart';
 import 'package:madrasa_task/core/utilities/app_colors.dart';
+import 'package:madrasa_task/core/utilities/imageHelper.dart';
+import 'package:madrasa_task/core/utilities/image_paths.dart';
 import 'package:madrasa_task/core/widgets/custom_text_field.dart';
 import 'package:madrasa_task/generated/l10n.dart';
 import 'package:madrasa_task/presentation/Register/secondStep/widgets/CustomGridViewForClassRoomTexts.dart';
@@ -127,11 +129,28 @@ class SixthStepScreen extends StatelessWidget {
                       text: 'بطاقة ائتمان',
                       customTextStyle: RegularStyle(fontSize: 16.sp)),
                 Spacer(),
-                  Icon(Icons.payment,color: greenColor),
-                  SizedBox(width: 5.w,),
-                  Icon(Icons.payment,color: greenColor),
-                  SizedBox(width: 5.w,),
-                  Icon(Icons.payment,color: greenColor),
+                  ImageHelper(
+                    image: visa,
+                    imageType: ImageType.svg,
+                    height: 15.h,
+                    width: 15.h,
+                  ),
+                  SizedBox(width: 10.w,),
+                  ImageHelper(
+                    image: cash,
+                    imageType: ImageType.svg,
+                    height: 30.h,
+                    width: 50.h,
+                    color: greyColor,
+                  ),
+                  SizedBox(width: 10.w,),
+                  ImageHelper(
+                    image: masterCard,
+                    imageType: ImageType.svg,
+                    height: 20.h,
+                    width: 20.h,
+
+                  ),
                   SizedBox(width: 10.w,)
                 ],
               ),
