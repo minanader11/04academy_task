@@ -80,7 +80,7 @@ class _FirstStepScreenState extends State<FirstStepScreen> {
               // });
             },
             child: Container(
-              padding: EdgeInsetsDirectional.symmetric(horizontal: 5.w),
+              padding: EdgeInsetsDirectional.symmetric(horizontal: 15.w),
               height: 60.h,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(9.r),
